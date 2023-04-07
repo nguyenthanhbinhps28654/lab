@@ -1,12 +1,298 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Du lịch Việt Nam by PS28654</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/asmcss.css"
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <style>
+
+font-family: 'Roboto', sans-serif;
+    /* Mobile-first CSS */
+    .main {
+  padding: 20px;
+}
+
+.main h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.main p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.main img {
+  max-width: 100%;
+}
+
+
+    .main {
+  padding: 20px;
+}
+
+.main h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.main p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.main img {
+  max-width: 100%;
+}
+
+ .navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #333;
+   color: #fff;
+   padding: 10px;
+ }
+ 
+ .logo {
+   display: flex;
+   align-items: center;
+   font-size: 1.5rem;
+   font-weight: bold;
+ }
+ 
+ .logo img {
+   width: 50px;
+   margin-right: 10px;
+ }
+ 
+ .menu-toggle {
+   background-color: transparent;
+   border: none;
+   color: #fff;
+   font-size: 1.5rem;
+   cursor: pointer;
+ }
+ 
+ .menu {
+   display: none;
+   position: absolute;
+   top: 50px;
+   right: 10px;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   background-color: #333;
+   text-align: center;
+ }
+ 
+ .menu li {
+   margin: 10px 0;
+ }
+ 
+ .menu a {
+   display: block;
+   padding: 10px;
+   color: #fff;
+   text-decoration: none;
+ }
+ .banner {
+   position: relative;
+   width: 100%;
+   height: 300px;
+ }
+ 
+ .banner img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+ 
+ .banner-content {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   z-index: 1;
+   color:#e1ff00
+ }
+ 
+ .banner-content h1 {
+   font-size: 3rem;
+   margin-bottom: 1rem;
+   color:#e1ff00
+ }
+ 
+ .banner-content p {
+   font-size: 1.5rem;
+   margin-bottom: 2rem;
+ }
+ 
+ @media (min-width: 768px) {
+  
+  
+
+   .banner {
+     height: 500px;
+   }
+ 
+   .banner-content {
+     top: 40%;
+     left: 10%;
+     transform: translate(0, -50%);
+     text-align: left;
+     z-index: 1;
+     width: 50%;
+     color:#e1ff00
+   }
+ 
+   .banner-content h1 {
+     font-size: 4rem;
+     margin-bottom: 1rem;
+     color:#e1ff00
+   }
+ 
+   .banner-content p {
+     font-size: 2rem;
+     margin-bottom: 2rem;
+   }
+   
+ }
+ @media (max-width: 767px) {
+  
+
+
+     
+      .tour-form {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    max-width: 500px;
+  }
+  .banner {
+    height: 200px;
+  }
+
+  .banner-content {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    text-align: center;
+    z-index: 1;
+    width: 90%;
+  }
+
+  .banner-content h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .main {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .main h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .main p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+ 
+
+}
+
+
+ 
+ 
+ </style>
 </head>
-<body>
-    <H1>HELLO</H1>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="img/FPT_Polytechnic.png">
+        PS28654
+      </div>
+      <button class="menu-toggle" aria-label="Open Menu" aria-expanded="false">&#9776;</button>
+      <ul class="menu" role="menu" aria-haspopup="true" aria-expanded="false">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="tour.html">Tours</a></li>
+        <li><a href="#">Về chúng tôi</a></li>
+        <li><a href="lienhe.html">Thông tin liên lạc</a></li>
+      </ul>
+    </header>
+</header>
+<div class="banner">
+  <img src="img/vietnam.jpg" alt="Banner">
+  <div class="banner-content">
+    <h1>Chào mừng đến với du lịch Việt Nam</h1>
+    <p>Khám phá những địa điểm đẹp và thú vị tại Việt Nam</p>
+    <a href="#" class="btn btn-primary">Đặt tour ngay</a>
+  </div>
+</div>
+<main>
+  <h1>Giới thiệu về Vịnh Hạ Long</h1>
+  <img src="img/tải xuống.jpg" alt="Vịnh Hạ Long">
+  <p>Vịnh Hạ Long là một trong những điểm du lịch nổi tiếng của Việt Nam. Nơi đây có khoảng 1600 đảo đá vôi hình thù đa dạng và phong cảnh tuyệt đẹp. Vịnh Hạ Long được UNESCO công nhận là Di sản thế giới vào năm 1994.</p>
+  <p>Ngoài việc chiêm ngưỡng cảnh đẹp, du khách còn có thể tham gia các hoạt động thú vị như đi tàu thuyền khám phá vịnh, tắm biển, đáy kính, leo núi, cắm trại, câu cá, thăm quan hang động,...</p>
+</main>
+
+<main>
+  <h1>Giới thiệu về Núi Bà Đen</h1>
+  <img src="img/nuiba.jpg"alt="Vịnh Hạ Long">
+  <p>Núi Bà Đen là ngọn núi nằm ở trung tâm tỉnh Tây Ninh, Việt Nam. Với độ cao 986 m, đây là ngọn núi cao nhất miền Nam Việt Nam hiện nay, được mệnh danh "Đệ nhất thiên sơn".[2][3]
+
+    Theo Gia Định thành thông chí, tên gốc của núi Bà Đen là Bà Dinh. Những bậc kỳ lão địa phương thì cho rằng tên gốc là núi Một. Đến khoảng nửa thế kỷ XVIII mới xuất hiện tên gọi núi Bà Đênh, sau gọi trại dần thành núi Bà Đen. Cũng có người gọi là núi Điện Bà.[4] Trong Chiến tranh Việt Nam, khu vực xung quanh núi là một điểm nóng khi là nơi đường mòn Hồ Chí Minh kết thúc và cách biên giới Campuchia vài km về phía Tây.[5]</p>
+</main>
+
+<main>
+  <h1>Giới thiệu về Phú Quốc</h1>
+  <img src="img/phuquoc.jpg" alt="Vịnh Hạ Long">
+  <p>ùng biển Phú Quốc có 22 hòn đảo lớn nhỏ, trong đó đảo Phú Quốc lớn nhất có diện tích 580 km², dài 49 km. Địa hình thiên nhiên thoai thoải chạy từ bắc xuống nam với 99 ngọn núi đồi. Tuy nhiên, cụm đảo nhỏ của cảng An Thới bị ngăn cách hẳn với phần mũi phía nam của đảo Phú Quốc bởi một eo biển có độ sâu tới hơn 60 m.
+
+    Đảo Phú Quốc được cấu tạo từ các đá trầm tích Mesozoi và Kainozoi, bao gồm cuội kết đa nguồn gốc phân lớp dày, sỏi thạch anh, silica, đá vôi, riolit và felsit. Các đá Mesozoi thuộc hệ tầng Phú Quốc (K pq). Trầm tích Kainozoi thuộc các hệ tầng Long Toàn (Pleistocen giữa - trên), hệ tầng Long Mỹ (Pleistocene trên), hệ tầng Hậu Giang (Holocene dưới - giữa), các trầm tích Holocene trên và các trầm tích Đệ Tứ không phân chia (Q)</p>
+</main>
+
+
 </body>
-</html>
+<script>
+  // Menubar script
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  menuToggle.addEventListener('click', () => {
+    const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+
+    menuToggle.setAttribute('aria-expanded', !expanded);
+    menu.classList.toggle('active');
+  });
+  
+  
+
+</script>
+<br>
+      <footer>
+        <div class="contact-info">
+            <p><i class="fa fa-map-marker"></i> Địa chỉ: QUẬN 12 TPHCM,VIỆT NAM,TRÁI ĐẤT</p>
+            <p><i class="fa fa-phone"></i> Điện thoại: 0901234567</p>
+            <p><i class="fa fa-envelope"></i> Email: info@dulichvietnam.com</p>
+        </div>
+        <div class="social-media">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </footer>
