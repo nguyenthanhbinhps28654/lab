@@ -1,0 +1,140 @@
+<head>
+  <title>Tour Du lịch Việt Nam by PS28654</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/asmcss.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="img/FPT_Polytechnic.png">
+      PS28654
+    </div>
+    <button class="menu-toggle" aria-label="Open Menu" aria-expanded="false">&#9776;</button>
+    <ul class="menu" role="menu" aria-haspopup="true" aria-expanded="false">
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="tour.html">Tours</a></li>
+      <li><a href="#">Về chúng tôi</a></li>
+      <li><a href="lienhe.html">Thông tin liên lạc</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <h1>Các tour có sẵn</h1>
+    <div id="tours">
+      <div class="tour">
+        <img class="tour-img" src="img/sondoong.jpg" alt="Tour 1">
+        <h3 class="tour-title">Hang Sơn Đoòng</h3>
+        <p class="tour-price">2 ngày 1 đêm với 7.8000.000VND</p>
+        <button class="tour-btn">Đặt Tour</button>
+      </div>
+
+
+      <div class="tour">
+        <img class="tour-img" src="img/tải xuống.jpg" alt="Tour 1">
+        <h3 class="tour-title">Vịnh Hạ Long</h3>
+        <p class="tour-price">5 ngày 4 đêm với 10.000.000VND</p>
+        <button class="tour-btn">Đặt Tour</button>
+      </div>
+
+      <div class="tour">
+        <img class="tour-img" src="img/nuiba.jpg" alt="Tour 1">
+        <h3 class="tour-title">Núi Bà Đen</h3>
+        <p class="tour-price">3 ngày 2 đêm với 5.500.000VND</p>
+        <button class="tour-btn">Đặt Tour</button>
+      </div>
+
+      <div class="tour">
+        <img class="tour-img" src="img/nhatrang.jpg" alt="Tour 1">
+        <h3 class="tour-title">Nha Trang</h3>
+        <p class="tour-price">3 ngày 2 đêm với giá 8.900.000VND</p>
+        <button class="tour-btn">Đặt Tour</button>
+      </div>
+
+      <div class="tour">
+        <img class="tour-img" src="img/phuquoc.jpg" alt="Tour 1">
+        <h3 class="tour-title">Phú Quốc</h3>
+        <p class="tour-price">5 ngày 2 đêm với giá 9.800.000VND</p>
+        <button class="tour-btn">Đặt Tour</button>
+      </div>
+
+      <div class="tour">
+        <img class="tour-img" src="img/phuquoc.jpg" alt="Tour 1">
+        <h3 class="tour-title">Phú Quốc</h3>
+        <p class="tour-price">5 ngày 2 đêm với giá 9.800.000VND</p>
+        <button class="tour-btn">Đặt Tour</button>
+      </div>
+
+      <div class="tour">
+        <img class="tour-img" src="img/phuquoc.jpg" alt="Tour 1">
+        <h3 class="tour-title">Phú Quốc</h3>
+        <p class="tour-price">5 ngày 2 đêm với giá 9.800.000VND</p>
+        <button class="tour-btn">Đặt Tour</button>
+      </div>
+
+      <div class="tour">
+        <img class="tour-img" src="img/phuquoc.jpg" alt="Tour 1">
+        <h3 class="tour-title">Phú Quốc</h3>
+        <p class="tour-price">5 ngày 2 đêm với giá 9.800.000VND</p>
+        <button class="tour-btn">Đặt Tour</button>
+      </div>
+
+      <div class="tour">
+        <img class="tour-img" src="img/phuquoc.jpg" alt="Tour 1">
+        <h3 class="tour-title">Phú Quốc</h3>
+        <p class="tour-price">5 ngày 2 đêm với giá 9.800.000VND</p>
+        <button class="tour-btn">Đặt Tour</button>
+      </div>
+
+      <div class="tour">
+        <img class="tour-img" src="img/phuquoc.jpg" alt="Tour 1">
+        <h3 class="tour-title">Phú Quốc</h3>
+        <p class="tour-price">5 ngày 2 đêm với giá 9.800.000VND</p>
+        <button class="tour-btn">Đặt Tour</button>
+      </div>
+
+    </div>
+    <br>
+    
+  </main>
+  
+  <script>
+    // Menubar script
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+  
+    menuToggle.addEventListener('click', () => {
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+  
+      menuToggle.setAttribute('aria-expanded', !expanded);
+      menu.classList.toggle('active');
+    });
+    
+    
+
+  </script>
+   <script>
+    const tourBtn = document.querySelector('.tour-btn');
+    tourBtn.addEventListener('click', () => {
+      alert('Đặt tour thành công!');
+    });
+  </script>
+  
+</body>
+<footer>
+  <div class="contact-info">
+      <p><i class="fa fa-map-marker"></i> Địa chỉ: QUẬN 12 TPHCM,VIỆT NAM,TRÁI ĐẤT</p>
+      <p><i class="fa fa-phone"></i> Điện thoại: 0901234567</p>
+      <p><i class="fa fa-envelope"></i> Email: info@dulichvietnam.com</p>
+  </div>
+  <div class="social-media">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-youtube"></i></a>
+  </div>
+</footer>
+
+</html>
